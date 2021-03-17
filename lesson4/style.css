@@ -6,10 +6,10 @@
     font-size: 24px;
 }
 
-a[href][target] {
+a [href] [target] {
     color: green;
 }
 
-input[type="text"] {
+input [type="text"] {
     background-color: orange;
 }
