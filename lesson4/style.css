@@ -1,21 +1,22 @@
-li {
-    margin-bottom: 16px;
+p.theory::first-letter {
+    font-size: 36px;
+    margin-left: 16px;
+    color: orange;
 }
 
-li:first-child>span {
+p.theory::first-line {
+    font-size: 24px;
+}
+
+p.theory::selection {
     background-color: red;
     color: white;
 }
 
-li:last-child>span {
-    background-color: black;
-    color: white;
+a::before {
+    content: "> ";
 }
 
-li:nth-child(even)>span {
-    margin-left: 16px;
-}
-
-div.paragraphs>p:nth-child(3n+1) {
-    background-color: grey;
+a::after {
+    content: " <";
 }
