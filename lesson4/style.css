@@ -14,9 +14,9 @@ p.theory::first-letter {
 }
 
 a::before {
-    content: "> ";
+    content: ">";
 }
 
 a::after {
-    content: " <";
+    content: "<";
 }
