@@ -48,4 +48,5 @@ body>div:nth-child(5)>p:nth-child(3) {
 
 body>div:nth-child(5) em {
     font-size: 20px;
+    color: white;
 }
