@@ -1,16 +1,16 @@
-p.theory::first-letter {
-    font-size: 36px;
-    margin-left: 16px;
-    color: orange;
-}
-
 p.theory::first-line {
     font-size: 24px;
 }
 
-p.theory::selection {
+body>p.theory::selection {
     background-color: red;
     color: white;
+}
+
+p.theory::first-letter {
+    font-size: 36px;
+    margin-left: 16px;
+    color: orange;
 }
 
 a::before {
