@@ -15,7 +15,7 @@
 }
 
 .footer {
+    display: block;
+    box-sizing: content-box;
     clear: both;
-    height: 30px;
-    border: 2px solid black;
 }
