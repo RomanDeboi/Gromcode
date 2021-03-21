@@ -5,22 +5,22 @@ div {
     float: left;
 }
 
-.block-red {
+.block_red {
     background-color: red;
 }
 
-.block-green {
+.block_green {
     background-color: green;
 }
 
-.block-blue {
+.block_blue {
     background-color: blue;
 }
 
-.block-yellow {
+.block_yellow {
     background-color: yellow;
 }
 
-.block-black {
+.block_black {
     background-color: black;
 }
