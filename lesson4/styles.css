@@ -1,13 +1,11 @@
 .horizontal {
     display: flex;
-    box-sizing: border-box;
     height: 50px;
     justify-content: space-around;
     align-items: center;
 }
 
 .vertical {
-    box-sizing: border-box;
     height: 200px;
     display: flex;
     flex-direction: column;
