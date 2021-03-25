@@ -1,28 +1,20 @@
-body {
+body>* {
+    display: block;
+}
+
+main {
     display: flex;
+    flex-direction: column;
 }
 
-div {
-    flex: 1;
-    height: 300px;
+header {
+    text-align: center;
 }
 
-.block_red {
-    background-color: red;
-}
-
-.block_green {
-    background-color: green;
-}
-
-.block_blue {
-    background-color: blue;
-}
-
-.block_yellow {
-    background-color: yellow;
-}
-
-.block_black {
-    background-color: black;
+.article {
+    margin: 8px;
+    padding: 16px;
+    background-color: bisque;
+    flex: 1 0 300px;
+    min-width: 300px;
 }
