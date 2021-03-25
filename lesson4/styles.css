@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
 body>* {
     display: block;
 }
@@ -6,6 +15,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     min-width: 300px;
+    height: 100%;
 }
 
 header {
@@ -17,4 +27,5 @@ header {
     padding: 16px;
     background-color: bisque;
     flex: 1 1 300px;
+    align-items: stretch;
 }
