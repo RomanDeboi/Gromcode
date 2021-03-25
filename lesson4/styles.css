@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -20,5 +19,5 @@ header {
     margin: 8px;
     padding: 16px;
     background-color: bisque;
-    flex: 1 0 300px;
+    flex: 1 0 150px;
 }
