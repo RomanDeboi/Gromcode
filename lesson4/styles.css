@@ -16,5 +16,5 @@ header {
     margin: 8px;
     padding: 16px;
     background-color: bisque;
-    flex: 1 0 auto;
+    flex: 1 1 300px;
 }
