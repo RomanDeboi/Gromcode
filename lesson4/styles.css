@@ -1,7 +1,28 @@
-div>div:first-child {
-    display: none;
+.articles {
+    display: flex;
+    flex-direction: row;
 }
 
-div>div:nth-child(2) {
-    visibility: hidden;
+.articles>div {
+    box-sizing: border-box;
+    height: 100px;
+    width: 150px;
+    background-color: beige;
+    margin: 16px;
+}
+
+.cropped {
+    overflow: hidden;
+}
+
+.both-scrolls {
+    overflow: scroll;
+}
+
+.vertical-scroll {
+    overflow-y: scroll;
+}
+
+.cropped~div {
+    cursor: all-scroll;
 }
