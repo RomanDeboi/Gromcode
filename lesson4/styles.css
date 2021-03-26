@@ -1,6 +1,7 @@
 .gallery {
     white-space: nowrap;
     overflow: auto hidden;
+    font-size: 0px;
 }
 
 .thumb {
