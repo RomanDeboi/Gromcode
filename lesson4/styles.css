@@ -27,6 +27,7 @@
 
 .dropdown {
     margin: 16px;
+    position: absolute;
 }
 
 .menu-list {
