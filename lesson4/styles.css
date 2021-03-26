@@ -1,21 +1,7 @@
-body>* {
-    display: block;
+div>div:first-child {
+    display: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-header {
-    text-align: center;
-}
-
-.article {
-    box-sizing: border-box;
-    margin: 8px;
-    padding: 16px;
-    background-color: bisque;
-    flex: 1 0 300px;
+div>div:nth-child(2) {
+    visibility: hidden;
 }
