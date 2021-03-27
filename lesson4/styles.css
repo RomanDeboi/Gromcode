@@ -1,15 +1,29 @@
-.gallery {
-    white-space: nowrap;
-    overflow: auto hidden;
-    font-size: 0px;
+body {
+    margin: 32px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
 }
 
-.thumb {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 8px;
+h1 {
+    word-spacing: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.gallery:hover {
-    cursor: all-scroll;
+p {
+    line-height: 28px;
+}
+
+b {
+    font-weight: 900;
+    opacity: 0.2;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    color: grey;
 }
