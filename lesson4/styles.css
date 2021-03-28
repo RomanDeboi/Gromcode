@@ -16,8 +16,10 @@ p {
 
 b {
     font-weight: 900;
+    letter-spacing: 3px;
     opacity: 0.8;
     text-decoration: underline;
+    font-size: 24px;
 }
 
 a {
