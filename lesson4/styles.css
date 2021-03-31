@@ -1,25 +1,4 @@
-.gallery {
-    display: flex;
-}
-
-.image {
-    box-sizing: border-box;
-    flex-direction: row;
-    flex: 0 0 200px;
-    height: 200px;
-    flex-wrap: nowrap;
-    background-clip: padding-box;
-    margin: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px dotted grey;
-}
-
-.image:first-child,
-.image:nth-child(2) {
-    background-size: 100%;
-}
-
-.image:last-child {
-    background-size: auto 100%;
+body {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/background.jpg);
+    background-repeat: repeat;
 }
