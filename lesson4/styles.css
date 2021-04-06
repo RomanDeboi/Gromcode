@@ -1,4 +1,4 @@
-body {
+* {
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .card>img,
-.card>figurecaption {
+figurecaption {
     display: block;
 }
 
@@ -39,7 +39,7 @@ body {
     filter: invert(100%);
 }
 
-.card>figurecaption {
+figurecaption {
     height: 30px;
     text-align: center;
     line-height: 30px;
