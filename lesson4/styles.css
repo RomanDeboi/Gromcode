@@ -1,12 +1,12 @@
-* {
+body {
     box-sizing: border-box;
 }
 
-.image-conteiner {
+.image-container {
     margin: 50px 0px;
 }
 
-.image-conteiner img {
+.image-container img {
     display: block;
     max-width: 100%;
     border-radius: 20px;
