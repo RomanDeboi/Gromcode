@@ -17,14 +17,14 @@
     display: flex;
 }
 
-.card {
-    margin: 16px;
-    box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
-}
-
 .card>img,
 figurecaption {
     display: block;
+}
+
+.card {
+    margin: 16px;
+    box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
 }
 
 .gallery>.card:first-child>img {
@@ -40,7 +40,6 @@ figurecaption {
 }
 
 figurecaption {
-    height: 30px;
     text-align: center;
     line-height: 30px;
 }
