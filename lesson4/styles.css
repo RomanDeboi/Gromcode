@@ -40,6 +40,8 @@ figurecaption {
 }
 
 figurecaption {
+    height: 31px;
     text-align: center;
-    line-height: 30px;
+    line-height: 31px;
+    text-transform: lowercase;
 }
