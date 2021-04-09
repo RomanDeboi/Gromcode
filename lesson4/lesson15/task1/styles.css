@@ -6,8 +6,11 @@
     margin: 50px 0px;
 }
 
-.image-container img {
+img {
     display: block;
+}
+
+.main-img {
     max-width: 100%;
     border-radius: 20px;
     margin: 0px auto;
@@ -17,9 +20,11 @@
     display: flex;
 }
 
-.card>img,
 figurecaption {
     display: block;
+    text-align: center;
+    line-height: 30px;
+    text-transform: lowercase;
 }
 
 .card {
@@ -27,20 +32,14 @@ figurecaption {
     box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
 }
 
-.gallery>.card:first-child>img {
+.img1 {
     filter: opacity(50%);
 }
 
-.gallery>.card:nth-child(2)>img {
+.img2 {
     filter: blur(4px);
 }
 
-.gallery>.card:last-child>img {
+.img3 {
     filter: invert(100%);
-}
-
-figurecaption {
-    text-align: center;
-    line-height: 30px;
-    text-transform: lowercase;
 }
