@@ -3,6 +3,5 @@ form {
 }
 
 form>* {
-    display: block;
     margin: 8px;
 }
