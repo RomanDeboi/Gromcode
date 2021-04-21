@@ -1,12 +1,8 @@
 form {
-    margin-left: 32px;
+    margin: 32px;
 }
 
 form>* {
     margin: 8px;
     display: block;
-}
-
-input {
-    margin: 8px;
 }
