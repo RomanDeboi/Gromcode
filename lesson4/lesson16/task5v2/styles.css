@@ -2,6 +2,6 @@ form {
     margin-left: 32px;
 }
 
-form>* {
+div {
     margin: 8px;
 }
