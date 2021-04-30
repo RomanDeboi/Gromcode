@@ -6,7 +6,7 @@ div {
 table {
     box-sizing: border-box;
     width: 500px;
-    margin: 16px;
+    /* margin: 16px; */
 }
 
 table,
@@ -17,12 +17,12 @@ th {
 }
 
 tr {
-    /* line-height: 40px; */
+    line-height: 40px;
 }
 
 td,
 th {
-    padding: 4px;
+    /* padding: 4px; */
     text-align: right;
 }
 
