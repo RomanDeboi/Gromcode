@@ -1,12 +1,12 @@
 div {
     width: 100%;
     overflow-x: auto;
+    margin: 16px;
 }
 
 table {
     box-sizing: border-box;
     width: 500px;
-    /* margin: 16px; */
 }
 
 table,
@@ -22,7 +22,7 @@ tr {
 
 td,
 th {
-    /* padding: 4px; */
+    padding: 4px;
     text-align: right;
 }
 
