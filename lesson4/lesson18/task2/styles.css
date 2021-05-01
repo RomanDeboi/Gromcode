@@ -16,6 +16,7 @@ button {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
+    line-height: 50px;
 }
 
 button:hover>#Layer_1,
