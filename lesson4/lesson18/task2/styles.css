@@ -10,7 +10,6 @@ button {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     cursor: pointer;
-    vertical-align: middle;
 }
 
 button:hover>#Layer_1,
