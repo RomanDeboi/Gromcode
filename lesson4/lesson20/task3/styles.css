@@ -46,7 +46,7 @@
     border: 4px solid;
     border-color: black lightgray lightgray;
     margin-bottom: 8px;
-    animation: spin 2s linear infinite;
+    animation: spin 2s linear;
 }
 
 * {
