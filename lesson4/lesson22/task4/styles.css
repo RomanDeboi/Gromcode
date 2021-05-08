@@ -88,12 +88,16 @@ body {
     font-size: 1.25em;
 }
 
+section.container {
+    padding: 0.5em 0;
+}
+
 .section__header {
     font-size: 5vw;
     text-align: center;
 }
 
-.picture>* {
+.picture>img {
     display: block;
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
