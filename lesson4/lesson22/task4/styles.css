@@ -88,6 +88,10 @@ body {
     font-size: 1.25em;
 }
 
+section>p {
+    margin: 0;
+}
+
 .section__header {
     font-size: 5vw;
     text-align: center;
