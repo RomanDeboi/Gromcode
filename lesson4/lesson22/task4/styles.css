@@ -86,8 +86,6 @@ body {
 
 .section {
     font-size: 1.25em;
-    display: flex;
-    flex-direction: column;
 }
 
 .section__header {
@@ -103,7 +101,7 @@ body {
 }
 
 .picture {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .units-list {
