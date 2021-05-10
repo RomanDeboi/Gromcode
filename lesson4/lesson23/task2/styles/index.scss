@@ -1,0 +1,35 @@
+@import "breakpoints.scss";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    @include flex-centr;
+    .container {
+        @include flex-centr;
+        @include portrait {
+            flex-direction: column;
+        }
+        @include landscape {
+            flex-direction: row;
+        }
+        .square {
+            flex: 0 0 100px;
+            height: 100px;
+            width: 100px;
+            margin: $unit;
+            background-color: $bc-extra-small;
+            @include for-small {
+                background-color: $bc-small;
+            }
+            @include for-medium {
+                background-color: $bc-medium;
+            }
+            @include for-large {
+                background-color: $bc-large;
+            }
+        }
+    }
+}

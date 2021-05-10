@@ -1,0 +1,49 @@
+$unit: 8px;
+$bc-extra-small: #ff7f50;
+$bc-small: #8a2be2;
+$bc-medium: #a61;
+$bc-large: #c47;
+$sm:600px;
+$md:900px;
+$lg:1200px;
+@mixin for-extra-small {
+    @media screen and (max-width: $sm - 1px) {
+        @content;
+    }
+}
+
+@mixin for-small {
+    @media screen and (min-width: $sm) and (max-width: ($md - 1px)) {
+        @content;
+    }
+}
+
+@mixin for-medium {
+    @media screen and (min-width: $md) and (max-width: ($lg - 1px)) {
+        @content;
+    }
+}
+
+@mixin for-large {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media screen and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin flex-centr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
