@@ -1,0 +1,33 @@
+@import "variables";
+.header {
+    height: $unit * 7;
+    background-color: $color-grey;
+}
+
+.header__navigation {
+    height: 100%;
+}
+
+.nav-list {
+    @extend .header__navigation;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    &__item {
+        list-style-type: none;
+        border-radius: $border-radius;
+        background-color: $color-secondary;
+        color: $text-color-secondary;
+        padding: $unit;
+        margin-left: $unit;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__item_selected {
+        background-color: $color-primary;
+    }
+}
