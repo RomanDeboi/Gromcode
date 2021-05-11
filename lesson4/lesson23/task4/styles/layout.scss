@@ -1,0 +1,77 @@
+    %common_properties {
+        height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    @mixin xsm {
+        @media screen and (max-width: 599px) {
+            @content;
+        }
+    }
+    
+    @mixin sm {
+        @media screen and (min-width: 600px) and (max-width: 899px) {
+            @content;
+        }
+    }
+    
+    @mixin lg {
+        @media screen and (min-width: 900px) {
+            @content;
+        }
+    }
+    
+    @mixin comm_respon {
+        display: flex;
+        .navigation,
+        .main {
+            width: 50%;
+        }
+    }
+    
+    .navigation {
+        background-color: #ff7f50;
+        @extend %common_properties;
+        &__text {
+            padding: 8px;
+            background-color: #faebd7;
+            border-radius: 4px;
+            line-height: 200px;
+        }
+    }
+    
+    .main {
+        background-color: #006400;
+        @extend %common_properties;
+        &__text {
+            @extend .navigation__text;
+        }
+    }
+    
+    .news {
+        background-color: #0ff;
+        @extend %common_properties;
+        &__text {
+            @extend .navigation__text;
+        }
+    }
+    
+    @include sm {
+        .container-nav-menu {
+            @include comm_respon;
+        }
+    }
+    
+    @include lg {
+        body {
+            display: flex;
+            .container-nav-menu {
+                width: (100% / 3) * 2;
+                @include comm_respon;
+            }
+            .news {
+                width: (100% / 3);
+            }
+        }
+    }
