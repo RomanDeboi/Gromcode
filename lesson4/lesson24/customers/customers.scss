@@ -1,0 +1,9 @@
+.customers {
+    display: flex;
+    align-items: center;
+    padding: 30px 130px 106px 130px;
+    justify-content: space-between;
+    &__logo {
+        filter: brightness(0);
+    }
+}

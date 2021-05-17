@@ -1,0 +1,21 @@
+@import "heder/heder.scss";
+@import "footer/footer.scss";
+@import "headline/headline.scss";
+@import "about/about.scss";
+@import "customers/customers.scss";
+@import "features/features.scss";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(43, 41, 45, 1);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+}

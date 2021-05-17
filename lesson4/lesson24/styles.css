@@ -1,0 +1,376 @@
+.top-section {
+  background-color: #f3c6bd;
+  height: 710px;
+}
+.top-section__header {
+  margin: 39px auto 0 auto;
+}
+
+.header {
+  width: 1140px;
+  height: 62px;
+  display: flex;
+}
+.header__logo {
+  margin-top: 2px;
+}
+.header__navigation {
+  margin-left: auto;
+  margin-top: 7px;
+}
+.header__button {
+  margin-left: 56px;
+}
+
+.logo {
+  width: 299px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo__img {
+  width: 60px;
+  height: 60px;
+}
+.logo__text {
+  margin-left: 15px;
+}
+.logo__name {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.logo__description {
+  line-height: 25px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #2b292d;
+  font-size: 18px;
+  line-height: 25px;
+}
+.navigation__link:nth-child(n+2) {
+  margin-left: 8ch;
+}
+.navigation__link_bold {
+  font-weight: 700;
+}
+.navigation__arrow {
+  display: inline-block;
+  height: 5px;
+  width: 8px;
+  background-image: url(img/arrow.png);
+  background-size: 100% 100%;
+  margin-left: 11px;
+}
+
+.button-action {
+  width: 160px;
+  height: 48px;
+  border-radius: 2px;
+  background-color: #3040c4;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 389px;
+}
+.footer__top {
+  width: 1140px;
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+}
+.footer__line {
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(43, 41, 45, 0.1);
+}
+.footer__bottom {
+  display: flex;
+  height: 50px;
+  width: 1140px;
+  margin: 0 auto;
+}
+.footer__bottom-links {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  width: 100%;
+}
+.footer__social-links {
+  margin-left: auto;
+}
+
+.terms {
+  height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.terms__link {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+}
+.terms__link:nth-child(n+2) {
+  margin-left: 4ch;
+}
+
+.social-links {
+  height: 18px;
+  line-height: 18px;
+}
+.social-links__link {
+  display: inline-block;
+}
+.social-links__link:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.about-company {
+  width: 360px;
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+}
+.about-company__description {
+  height: 85px;
+  margin: 26px 0 0 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.about-company__downloads {
+  margin-top: 25px;
+  display: flex;
+}
+.about-company__downloads-button {
+  display: flex;
+}
+.about-company__downloads-button:last-child {
+  margin-left: 10px;
+}
+
+.footer-aditional-navigation {
+  display: flex;
+  margin: 60px auto auto 126px;
+}
+.footer-aditional-navigation__column:last-child {
+  margin-left: 29px;
+}
+.footer-aditional-navigation__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+}
+.footer-aditional-navigation__list {
+  margin: 18px 0 0 0;
+  width: 265px;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-aditional-navigation__list-item {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(43, 41, 45, 0.6);
+  margin-bottom: 6px;
+}
+
+.headline {
+  position: relative;
+}
+.headline__content {
+  position: absolute;
+  z-index: 1;
+  top: 76px;
+  left: 126px;
+}
+.headline__title {
+  width: 754px;
+  height: 165px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  margin: 0;
+}
+.headline__description {
+  width: 456px;
+  height: 102px;
+  margin: 34px 0 0 0;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+}
+.headline__actions {
+  display: flex;
+  margin-top: 58px;
+}
+.headline__learn-more {
+  margin-left: 10px;
+}
+.headline__banner {
+  position: absolute;
+  width: 796px;
+  height: 448px;
+  top: 84px;
+  left: 579px;
+}
+
+.button-learn-more {
+  width: 158px;
+  height: 48px;
+  border-radius: 2px;
+  background-color: white;
+  color: #3040c4;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 130px;
+  background-color: #f4f5f7;
+}
+
+.article {
+  width: 555px;
+}
+.article__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0;
+}
+.article__text {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  padding: 30px 130px 106px 130px;
+  justify-content: space-between;
+}
+.customers__logo {
+  filter: brightness(0);
+}
+
+.features {
+  position: relative;
+  padding: 0 130px 110px 130px;
+}
+.features__content {
+  width: 462px;
+}
+.features__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #009b4d;
+  margin: 0;
+}
+.features__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  width: 462px;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+.features__description {
+  font-size: 24px;
+  line-height: 34px;
+  width: 461px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.features__left-decoration {
+  position: absolute;
+  left: 0;
+  top: 258px;
+}
+.features__right-decoration {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.advantages-list {
+  margin-top: 42px;
+}
+
+.advantages-list {
+  width: 459px;
+}
+
+.advantage {
+  height: 51px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.15);
+}
+.advantage__header {
+  display: flex;
+  align-items: center;
+}
+.advantage__title {
+  margin: 0 0 0 15px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantage__description {
+  width: 459px;
+  height: 73px;
+  margin: 8px 0 0 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages-list__item:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.advantage_selected {
+  height: 109px;
+  border-bottom: 3px solid #3142c6;
+}
+.advantage_selected .advantage__title {
+  color: #3142c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  color: #2b292d;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 130px;
+    background-color: rgba(244, 245, 247, 1);
+}
+
+.article {
+    width: 555px;
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+    &__text {
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}

@@ -1,0 +1,106 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 389px;
+    &__top {
+        width: 1140px;
+        flex-grow: 1;
+        margin: 0 auto;
+        display: flex;
+    }
+    &__line {
+        margin: 0;
+        border: none;
+        border-top: 1px solid rgba(43, 41, 45, 0.1);
+    }
+    &__bottom {
+        display: flex;
+        height: 50px;
+        width: 1140px;
+        margin: 0 auto;
+    }
+    &__bottom-links {
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+        width: 100%;
+    }
+    &__social-links {
+        margin-left: auto;
+    }
+}
+
+.terms {
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(43, 41, 45, 0.6);
+    }
+    &__link:nth-child(n+2) {
+        margin-left: 4ch;
+    }
+}
+
+.social-links {
+    height: 18px;
+    line-height: 18px;
+    &__link {
+        display: inline-block;
+    }
+    &__link:nth-child(n+2) {
+        margin-left: 20px;
+    }
+}
+
+.about-company {
+    width: 360px;
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    &__description {
+        height: 85px;
+        margin: 26px 0 0 0;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(43, 41, 45, 0.6);
+    }
+    &__downloads {
+        margin-top: 25px;
+        display: flex;
+    }
+    &__downloads-button {
+        display: flex;
+    }
+    &__downloads-button:last-child {
+        margin-left: 10px;
+    }
+}
+
+.footer-aditional-navigation {
+    display: flex;
+    margin: 60px auto auto 126px;
+    &__column:last-child {
+        margin-left: 29px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0;
+    }
+    &__list {
+        margin: 18px 0 0 0;
+        width: 265px;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__list-item {
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(43, 41, 45, 0.6);
+        margin-bottom: 6px;
+    }
+}
