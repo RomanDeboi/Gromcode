@@ -1,4 +1,7 @@
 .features {
+    @include medialess1400 {
+        display: none;
+    }
     position: relative;
     padding: 0 130px 110px 130px;
     &__content {

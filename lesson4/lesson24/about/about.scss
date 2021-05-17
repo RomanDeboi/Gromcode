@@ -1,12 +1,26 @@
 .about {
     display: flex;
-    justify-content: space-between;
-    padding: 76px 130px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 46px 15px;
     background-color: rgba(244, 245, 247, 1);
+    @include medialess1400 {
+        &__article:nth-child(n+2) {
+            margin-top: 20px;
+        }
+    }
+    @include media1400 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 76px 130px;
+    }
 }
 
 .article {
-    width: 555px;
+    width: 290px;
+    @include media1400 {
+        width: 555px;
+    }
     &__title {
         font-weight: 700;
         font-size: 22px;

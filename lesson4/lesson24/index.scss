@@ -1,9 +1,12 @@
-@import "heder/heder.scss";
-@import "footer/footer.scss";
-@import "headline/headline.scss";
-@import "about/about.scss";
-@import "customers/customers.scss";
-@import "features/features.scss";
+@import "variables.scss",
+"common/common.scss",
+"heder/heder.scss",
+"footer/footer.scss",
+"headline/headline.scss",
+"about/about.scss",
+"customers/customers.scss",
+"features/features.scss",
+"tips/tips.scss";
 * {
     box-sizing: border-box;
 }
@@ -17,5 +20,22 @@ html {
 .page {
     display: flex;
     flex-direction: column;
-    width: 1400px;
+    width: 320px;
+    @include media1400 {
+        width: 1400px;
+    }
+}
+
+.top-section {
+    background-color: rgba(243, 198, 189, 1);
+    @include media1400 {
+        height: 710px;
+    }
+    &__header {
+        background-color: rgba(255, 255, 255, 1);
+        @include media1400 {
+            background-color: transparent;
+            margin: 39px auto 0 auto;
+        }
+    }
 }
