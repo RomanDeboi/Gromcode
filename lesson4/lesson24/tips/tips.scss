@@ -1,4 +1,7 @@
 .tips {
+    @include media1400 {
+        display: none;
+    }
     padding-bottom: 10px;
 }
 

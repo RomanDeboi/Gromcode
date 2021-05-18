@@ -9,40 +9,42 @@
         justify-content: space-between;
         padding: 30px 130px 106px 130px;
     }
-    &__item {
-        @include medialess1400 {
-            flex: 0 0 (100%/3);
-            height: 94px;
-            border: 1px solid rgba(227, 227, 227, 1);
-        }
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    @include medialess1400 {
-        &__item:nth-child(3n+3) {
-            border-right: none;
-        }
-        &__item:nth-last-child(3n+3) {
-            border-left: none;
-        }
-        &__item:nth-child(n-3) {
-            border-top: none;
-        }
-    }
-    &__logo {
-        @include medialess1400 {
-            max-width: 72%;
-        }
-        filter: brightness(0);
-    }
-}
-
-@include medialess1400 {
-    .customers::after {
+    &::after {
         content: "";
         order: 4;
         height: 0;
         flex-basis: 100%;
+        @include media1400 {
+            display: none;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 (100%/3);
+        height: 94px;
+        border: 1px solid rgba(227, 227, 227, 1);
+        @include media1400 {
+            flex: 0 1 auto;
+            height: auto;
+            border: none;
+        }
+    }
+    &__item:nth-child(3n+3) {
+        border-right: none;
+    }
+    &__item:nth-last-child(3n+3) {
+        border-left: none;
+    }
+    &__item:nth-child(n-3) {
+        border-top: none;
+    }
+    &__logo {
+        max-width: 72%;
+        filter: brightness(0);
+        @include media1400 {
+            max-width: 100%;
+        }
     }
 }

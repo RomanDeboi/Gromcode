@@ -27,9 +27,6 @@
         display: none;
         @include media1400 {
             display: block;
-            line-height: 25px;
-            font-size: 18px;
-            opacity: 0.6;
         }
     }
     &__button-menu {

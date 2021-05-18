@@ -4,9 +4,10 @@
     justify-content: center;
     padding: 46px 15px;
     background-color: rgba(244, 245, 247, 1);
-    @include medialess1400 {
-        &__article:nth-child(n+2) {
-            margin-top: 20px;
+    &__article:nth-child(n+2) {
+        margin-top: 20px;
+        @include media1400 {
+            margin-top: 0;
         }
     }
     @include media1400 {

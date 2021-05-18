@@ -20,9 +20,9 @@ html {
 .page {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
     @include media1400 {
-        width: 1400px;
+        max-width: 1400px;
     }
 }
 
