@@ -60,10 +60,15 @@
             }
         }
         &__learn-more {
+            width: 290px;
+            height: 48px;
             margin-top: 15px;
+            color: rgba(48, 64, 196, 1);
             @include media1400 {
                 margin-top: 0;
                 margin-left: 10px;
+                width: 158px;
+                height: 48px;
             }
         }
         &__banner {
@@ -79,19 +84,4 @@
                 margin: 0;
             }
         }
-    }
-    
-    .button-learn-more {
-        width: 290px;
-        height: 48px;
-        @include media1400 {
-            width: 158px;
-            height: 48px;
-        }
-        border-radius: 2px;
-        background-color: rgba(255, 255, 255, 1);
-        color: rgba(48, 64, 196, 1);
-        font-weight: 700;
-        font-size: 18px;
-        border: none;
     }
