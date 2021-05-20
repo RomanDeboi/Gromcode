@@ -1,0 +1,101 @@
+.start-trial {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(244, 245, 247, 1);
+    @include media1400 {
+        height: 441px;
+        padding: 0 228px 0 224px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__illustration {
+        width: 200px;
+        @include media1400 {
+            width: 269.41px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media1400 {
+            width: 555px;
+            align-items: flex-start;
+        }
+    }
+    &__title {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.25px;
+        @include media1400 {
+            margin-top: 0;
+            text-align: left;
+        }
+    }
+    &__description {
+        height: 167px;
+        margin-top: 18px;
+        margin-bottom: 0;
+        font-size: 22px;
+        line-height: 32px;
+        @include media1400 {
+            height: auto;
+            margin-top: 12px;
+        }
+    }
+    &__form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        @include media1400 {
+            width: 100%;
+            margin-top: 26px;
+            flex-direction: row;
+        }
+    }
+    &__email-input {
+        width: 290px;
+        height: 48px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 2px;
+        flex-shrink: 0;
+        &::placeholder {
+            font-size: 18px;
+            line-height: 13px;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            color: rgba(43, 41, 45, 1);
+        }
+        @include media1400 {
+            flex-grow: 1;
+        }
+    }
+    &__ation-button {
+        margin-top: 12px;
+        width: 290px;
+        height: 48px;
+        flex-shrink: 0;
+        @include media1400 {
+            width: 160px;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
+    &__form-description {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(43, 41, 45, 0.6);
+    }
+    &__terms-link {
+        color: rgba(49, 66, 198, 1);
+    }
+}

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 8px;
     @include media1400 {
         flex-wrap: nowrap;
         align-items: center;
@@ -45,6 +44,11 @@
         filter: brightness(0);
         @include media1400 {
             max-width: 100%;
+        }
+    }
+    &_second {
+        @include media1400 {
+            padding: 43px 130px 76px 130px;
         }
     }
 }
