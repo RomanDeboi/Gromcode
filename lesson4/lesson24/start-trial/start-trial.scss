@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(244, 245, 247, 1);
+    background-color: $color-lighter-blue;
     @include media1400 {
         height: 441px;
         padding: 0 228px 0 224px;
@@ -62,8 +62,8 @@
     &__email-input {
         width: 290px;
         height: 48px;
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(43, 41, 45, 0.2);
+        background: $color-white;
+        border: 1px solid $border-color-initial-transparent;
         border-radius: 2px;
         flex-shrink: 0;
         &::placeholder {
@@ -71,7 +71,7 @@
             line-height: 13px;
             text-align: center;
             font-family: 'Work Sans', sans-serif;
-            color: rgba(43, 41, 45, 1);
+            color: $text-color-initial;
         }
         @include media1400 {
             flex-grow: 1;
@@ -93,9 +93,9 @@
         margin-bottom: 0;
         font-size: 14px;
         line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-color-initial-transparent;
     }
     &__terms-link {
-        color: rgba(49, 66, 198, 1);
+        color: $color-navy-blue;
     }
 }

@@ -67,16 +67,16 @@
         max-width: 750px;
         text-decoration: none;
         &:hover * {
-            color: rgba(255, 255, 255, 1);
+            color: $color-white;
         }
         &:hover>.vacancy__content {
-            background-color: rgba(49, 65, 197, 1);
+            background-color: $color-navy-blue;
             background-clip: padding-box;
         }
         &:hover>.vacancy__arrow {
             background-image: url("img/icon-arrow-right-white.png");
             @include media1400 {
-                background-color: rgba(49, 65, 197, 1);
+                background-color: $color-navy-blue;
                 background-clip: padding-box;
             }
         }
@@ -88,16 +88,16 @@
         @include media1400 {
             .vacancy__position,
             .vacancy__location {
-                color: rgba(255, 255, 255, 1);
+                color: $color-white;
             }
             &>.vacancy__content {
-                background-color: rgba(49, 65, 197, 1);
+                background-color: $color-navy-blue;
                 background-clip: padding-box;
             }
             &>.vacancy__arrow {
                 background-image: url("img/icon-arrow-right-white.png");
                 @include media1400 {
-                    background-color: rgba(49, 65, 197, 1);
+                    background-color: $color-navy-blue;
                     background-clip: padding-box;
                 }
             }
@@ -108,7 +108,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
-        color: rgba(43, 41, 45, 1);
+        color: $text-color-initial;
         @include media1400 {
             width: 408px;
         }
@@ -117,7 +117,7 @@
         width: 199px;
         font-size: 16px;
         line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-color-initial-transparent;
         @include media1400 {
             font-size: 18px;
             margin-left: 20px;
@@ -131,7 +131,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        border: 1px solid rgba(43, 41, 45, 0.2);
+        border: 1px solid $border-color-initial-transparent;
         border-right: none;
         border-radius: 8px 0 0 8px;
         @include media1400 {
@@ -144,11 +144,11 @@
     &__arrow {
         height: 100%;
         width: 50px;
-        border: 1px solid rgba(43, 41, 45, 0.2);
+        border: 1px solid $border-color-initial-transparent;
         border-left: none;
         border-radius: 0 8px 8px 0;
         background-image: url("img/icon-arrow-right.png");
-        background-color: rgba(213, 212, 213, 1);
+        background-color: $color-grey;
         background-position: center;
         background-repeat: no-repeat;
         background-clip: padding-box;

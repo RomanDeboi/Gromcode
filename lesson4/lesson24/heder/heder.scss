@@ -2,6 +2,10 @@
     width: 100%;
     height: 64px;
     display: flex;
+    background-color: $color-white;
+    @include media1400 {
+        background-color: transparent;
+    }
     &__logo {
         margin: auto 0 auto 15px;
         @include media1400 {
@@ -65,7 +69,7 @@
         display: flex;
         &__link {
             text-decoration: none;
-            color: rgba(43, 41, 45, 1);
+            color: $text-color-initial;
             font-size: 18px;
             line-height: 25px;
         }
@@ -88,7 +92,7 @@
 .button-menu {
     width: 59px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $color-white;
     border: none;
-    border-left: 1px solid rgba(0, 0, 0, 0.15)
+    border-left: 1px solid $border-color-dark-transparent;
 }

@@ -20,11 +20,12 @@
 html {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
-    color: rgba(43, 41, 45, 1);
+    color: $text-color-initial;
 }
 
 .page {
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     min-width: 320px;
     @include media1400 {
@@ -33,14 +34,12 @@ html {
 }
 
 .top-section {
-    background-color: rgba(243, 198, 189, 1);
+    background-color: $color-coral;
     @include media1400 {
         height: 710px;
     }
     &__header {
-        background-color: rgba(255, 255, 255, 1);
         @include media1400 {
-            background-color: transparent;
             margin: 39px auto 0 auto;
         }
     }

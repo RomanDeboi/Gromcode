@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 46px 15px;
-    background-color: rgba(244, 245, 247, 1);
+    background-color: $color-lighter-blue;
     &__article:nth-child(n+2) {
         margin-top: 20px;
         @include media1400 {

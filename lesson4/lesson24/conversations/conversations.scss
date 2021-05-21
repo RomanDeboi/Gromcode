@@ -1,6 +1,6 @@
 .conversation {
     padding: 50px 15px;
-    background: rgba(252, 240, 227, 0.4);
+    background: $color-grey-transparent;
     @include media1400 {
         display: flex;
         align-items: flex-end;
@@ -34,7 +34,7 @@
             font-size: 14px;
             line-height: 22px;
             text-align: center;
-            color: rgba(43, 41, 45, 0.6);
+            color: $text-color-initial-transparent;
         }
     }
     &__subtitle {
@@ -43,7 +43,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 34px;
-        color: rgba(241, 89, 43, 1);
+        color: $color-light-orange;
         @include media1400 {
             margin-top: 0;
         }
@@ -81,9 +81,8 @@
 
 .comment {
     padding: 30px 20px 25px 20px;
-    border-bottom: 4px solid rgba(1, 133, 208, 1);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
-    background-blend-mode: overlay, normal;
+    border-bottom: 4px solid $color-light-blue;
+    background: $color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     &__text {
         font-size: 20px;
@@ -109,7 +108,7 @@
     &__avtor-position {
         font-size: 16px;
         line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-color-initial-transparent;
     }
     &__avtor-photo {
         margin-top: 2px;

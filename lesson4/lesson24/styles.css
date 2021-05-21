@@ -15,7 +15,7 @@
 
 .button-action {
   border-radius: 2px;
-  background-color: #3040c4;
+  background-color: #3141c5;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   color: white;
   font-weight: 700;
@@ -42,6 +42,12 @@ hr {
   width: 100%;
   height: 64px;
   display: flex;
+  background-color: white;
+}
+@media screen and (min-width: 1400px) {
+  .header {
+    background-color: transparent;
+  }
 }
 .header__logo {
   margin: auto 0 auto 15px;
@@ -172,7 +178,7 @@ hr {
     display: block;
     margin: 47px 0 0 0;
     border: none;
-    border-top: 1px solid rgba(43, 41, 45, 0.1);
+    border-top: 1px solid rgba(43, 41, 45, 0.2);
   }
 }
 .footer__bottom {
@@ -445,7 +451,7 @@ hr {
   width: 290px;
   height: 48px;
   margin-top: 15px;
-  color: #3040c4;
+  color: #3141c5;
 }
 @media screen and (min-width: 1400px) {
   .headline__learn-more {
@@ -630,7 +636,7 @@ hr {
 
 .advantage {
   height: 51px;
-  border-bottom: 1px solid rgba(43, 41, 45, 0.15);
+  border-bottom: 1px solid rgba(43, 41, 45, 0.2);
 }
 .advantage__header {
   display: flex;
@@ -652,10 +658,10 @@ hr {
 
 .advantage_selected {
   height: 109px;
-  border-bottom: 3px solid #3142c6;
+  border-bottom: 3px solid #3141c5;
 }
 .advantage_selected .advantage__title {
-  color: #3142c6;
+  color: #3141c5;
 }
 
 .advantages-list {
@@ -821,8 +827,7 @@ hr {
 .comment {
   padding: 30px 20px 25px 20px;
   border-bottom: 4px solid #0185d0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
-  background-blend-mode: overlay, normal;
+  background: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 .comment__text {
@@ -879,7 +884,7 @@ hr {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
-  color: #0189d1;
+  color: #0185d0;
 }
 @media screen and (min-width: 1400px) {
   .tools__description-subtitle {
@@ -959,7 +964,7 @@ hr {
 .tools__line {
   width: 150px;
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   margin: 40px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
@@ -1000,7 +1005,7 @@ hr {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #3040c4;
+  color: #3141c5;
 }
 
 .audience {
@@ -1112,8 +1117,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
-  background-blend-mode: overlay, normal;
+  background: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   text-decoration: none;
@@ -1156,7 +1160,7 @@ hr {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #3142c6;
+  color: #3141c5;
 }
 .tools-review__text {
   margin-top: 29px;
@@ -1195,7 +1199,7 @@ hr {
   display: hidden;
 }
 .tools-review__slider-radio:checked + .tools-review__slider-button {
-  background-color: #3142c5;
+  background-color: #3141c5;
 }
 .tools-review__slider-button {
   display: inline-block;
@@ -1513,7 +1517,7 @@ hr {
   color: rgba(43, 41, 45, 0.6);
 }
 .start-trial__terms-link {
-  color: #3142c6;
+  color: #3141c5;
 }
 
 * {
@@ -1528,6 +1532,7 @@ html {
 
 .page {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   min-width: 320px;
 }
@@ -1545,12 +1550,8 @@ html {
     height: 710px;
   }
 }
-.top-section__header {
-  background-color: white;
-}
 @media screen and (min-width: 1400px) {
   .top-section__header {
-    background-color: transparent;
     margin: 39px auto 0 auto;
   }
 }

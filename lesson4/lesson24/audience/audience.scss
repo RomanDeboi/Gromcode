@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 15px;
-    background-color: rgba(0, 161, 198, 0.07);
+    background-color: $color-dark-blue-transparent;
     @include media1400 {
         padding: 110px 130px;
     }
@@ -91,8 +91,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
-        background-blend-mode: overlay, normal;
+        background: $color-white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
         border-radius: 8px;
         text-decoration: none;
@@ -100,10 +99,10 @@
         font-size: 22px;
         line-height: 28px;
         text-align: center;
-        color: rgba(43, 41, 45, 1);
+        color: $text-color-initial;
         &:hover {
-            background: rgba(49, 65, 197, 1);
-            color: rgba(255, 255, 255, 1);
+            background: $color-navy-blue;
+            color: $color-white;
         }
         @include media1400 {
             width: 262px;
