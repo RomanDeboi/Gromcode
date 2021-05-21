@@ -139,7 +139,8 @@ hr {
   .navigation__arrow {
     height: 5px;
     width: 8px;
-    background-image: url(img/arrow.png);
+    display: inline-block;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
     background-size: 100% 100%;
     margin-left: 11px;
   }
@@ -1308,7 +1309,7 @@ hr {
   background-clip: padding-box;
 }
 .vacancy__link:hover > .vacancy__arrow {
-  background-image: url("img/icon-arrow-right-white.png");
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
 }
 @media screen and (min-width: 1400px) {
   .vacancy__link:hover > .vacancy__arrow {
@@ -1331,7 +1332,7 @@ hr {
     background-clip: padding-box;
   }
   .vacancy__link_hovered > .vacancy__arrow {
-    background-image: url("img/icon-arrow-right-white.png");
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
   }
 }
 @media screen and (min-width: 1400px) and (min-width: 1400px) {
@@ -1390,7 +1391,7 @@ hr {
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-left: none;
   border-radius: 0 8px 8px 0;
-  background-image: url("img/icon-arrow-right.png");
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
   background-color: #d5d4d5;
   background-position: center;
   background-repeat: no-repeat;

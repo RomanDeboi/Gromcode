@@ -74,7 +74,7 @@
             background-clip: padding-box;
         }
         &:hover>.vacancy__arrow {
-            background-image: url("img/icon-arrow-right-white.png");
+            background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
             @include media1400 {
                 background-color: $color-navy-blue;
                 background-clip: padding-box;
@@ -95,7 +95,7 @@
                 background-clip: padding-box;
             }
             &>.vacancy__arrow {
-                background-image: url("img/icon-arrow-right-white.png");
+                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
                 @include media1400 {
                     background-color: $color-navy-blue;
                     background-clip: padding-box;
@@ -147,7 +147,7 @@
         border: 1px solid $border-color-initial-transparent;
         border-left: none;
         border-radius: 0 8px 8px 0;
-        background-image: url("img/icon-arrow-right.png");
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
         background-color: $color-grey;
         background-position: center;
         background-repeat: no-repeat;
