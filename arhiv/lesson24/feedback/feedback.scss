@@ -1,0 +1,75 @@
+.feedback {
+    padding: 39px 15px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $color-light-grey;
+    @include media1400 {
+        position: relative;
+        text-align: center;
+        padding: 0 0 66px 0;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color-navy-blue;
+    }
+    &__text {
+        margin-top: 29px;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 34px;
+        @include media1400 {
+            max-width: 750px;
+        }
+    }
+    &__author {
+        margin-top: 32px;
+    }
+    &__autor-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__autor-position {
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color-initial-transparent;
+    }
+    &__slider {
+        width: 75px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__slider-radio {
+        width: 0;
+        height: 0;
+        display: hidden;
+        &:checked+.tools-review__slider-button {
+            background-color: $color-navy-blue;
+        }
+    }
+    &__slider-button {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        padding: 0;
+        border: none;
+        background-color: $border-color-initial-transparent;
+    }
+    &__illustration {
+        margin-top: 40px;
+        @include media1400 {
+            width: 273px;
+            position: absolute;
+            bottom: 0;
+            right: 26px;
+        }
+    }
+}

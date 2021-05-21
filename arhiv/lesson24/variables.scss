@@ -1,0 +1,29 @@
+// colors
+$text-color-initial:rgb(43, 41, 45);
+$text-color-initial-transparent: rgba(43, 41, 45, 0.6);
+$text-color-green:rgb(0, 155, 77);
+$color-coral: rgb(243, 198, 189);
+$color-lighter-blue:rgb(244, 245, 247);
+$color-navy-blue: rgb(49, 65, 197);
+$color-white: rgb(255, 255, 255);
+$color-light-orange: rgb(241, 89, 43);
+$color-light-blue:rgb(1, 133, 208);
+$color-light-grey: rgb(227, 227, 227);
+$color-grey:rgb(213, 212, 213);
+$color-dark-blue-transparent:rgba(0, 161, 198, 0.07);
+$color-grey-transparent: rgba(252, 240, 227, 0.4);
+$border-color-initial-transparent:rgba(43, 41, 45, 0.2);
+$border-color-dark-transparent:rgba(0, 0, 0, 0.15);
+// media queries
+$break-point: 1400px;
+@mixin media1400 {
+    @media screen and (min-width: $break-point) {
+        @content;
+    }
+}
+
+@mixin medialess1400 {
+    @media screen and (max-width: $break-point - 1) {
+        @content;
+    }
+}

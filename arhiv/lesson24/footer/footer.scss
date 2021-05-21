@@ -1,0 +1,189 @@
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 389px;
+        &__top {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            @include media1400 {
+                width: 1140px;
+                flex-direction: row;
+            }
+        }
+        &__line {
+            display: none;
+            @include media1400 {
+                display: block;
+                margin: 47px 0 0 0;
+                border: none;
+                border-top: 1px solid $border-color-initial-transparent;
+            }
+        }
+        &__bottom {
+            display: flex;
+            width: 100%;
+            @include media1400 {
+                width: 1140px;
+                height: 50px;
+                margin: 0 auto;
+            }
+        }
+        &__bottom-links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 15px;
+            @include media1400 {
+                flex-direction: row;
+                margin: auto 0;
+                align-items: center;
+            }
+        }
+        &__terms {
+            margin-top: 30px;
+            @include media1400 {
+                margin-top: 0;
+            }
+        }
+        &__social-links {
+            margin-top: 30px;
+            margin-bottom: 23px;
+            @include media1400 {
+                margin: 0 0 0 auto;
+            }
+        }
+        &__logo {
+            flex-direction: column;
+            @include media1400 {
+                flex-direction: row;
+            }
+        }
+        &__logo-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include media1400 {
+                display: block;
+            }
+        }
+    }
+    
+    .terms {
+        font-size: 14px;
+        line-height: 22px;
+        &__link {
+            display: inline-block;
+            text-decoration: none;
+            color: $text-color-initial-transparent;
+        }
+        &__link:nth-child(n+2) {
+            margin-left: 4ch;
+        }
+    }
+    
+    .social-links {
+        height: 18px;
+        line-height: 18px;
+        &__link {
+            display: inline-block;
+        }
+        &__link:nth-child(n+2) {
+            margin-left: 20px;
+        }
+    }
+    
+    .about-company {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $color-light-grey;
+        @include media1400 {
+            width: 360px;
+            padding: 0;
+            border: none;
+        }
+        &__description {
+            display: none;
+            @include media1400 {
+                display: block;
+                height: 85px;
+                margin: 26px 0 0 0;
+                font-size: 18px;
+                line-height: 26px;
+                color: $text-color-initial-transparent;
+            }
+        }
+        &__downloads {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            @include media1400 {
+                justify-content: flex-start;
+                margin-top: 31px;
+            }
+        }
+        &__downloads-button {
+            display: flex;
+        }
+        &__downloads-button:last-child {
+            margin-left: 10px;
+        }
+    }
+    
+    .footer__about-company {
+        margin-top: 40px;
+        @include media1400 {
+            margin-top: 43px;
+        }
+    }
+    
+    .aditional-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @include media1400 {
+            height: 231px;
+            flex-direction: row;
+        }
+        &__column {
+            margin-top: 30px;
+            width: 265px;
+            @include media1400 {
+                margin-top: 0;
+            }
+        }
+        &__column:last-child {
+            @include media1400 {
+                margin-left: 29px;
+            }
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            margin: 0;
+        }
+        &__list {
+            margin: 18px 0 0 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        &__list-item:nth-child(n+2) {
+            margin-top: 6px;
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 30px;
+            color: $text-color-initial-transparent;
+            text-decoration: none;
+        }
+    }
+    
+    .footer__aditional-navigation {
+        margin-left: 15px;
+        @include media1400 {
+            margin: 60px auto auto 126px;
+        }
+    }

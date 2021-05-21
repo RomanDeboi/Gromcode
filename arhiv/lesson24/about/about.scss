@@ -1,0 +1,37 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 46px 15px;
+    background-color: $color-lighter-blue;
+    &__article:nth-child(n+2) {
+        margin-top: 20px;
+        @include media1400 {
+            margin-top: 0;
+        }
+    }
+    @include media1400 {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 76px 130px;
+    }
+}
+
+.article {
+    width: 290px;
+    @include media1400 {
+        width: 555px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+    &__text {
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}

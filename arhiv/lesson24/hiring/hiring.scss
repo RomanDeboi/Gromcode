@@ -1,0 +1,159 @@
+.hiring {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @include media1400 {
+        padding: 106px 325px 110px 325px;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.357143px;
+        @include media1400 {
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+        }
+    }
+    &__description {
+        max-width: 555px;
+        margin-top: 18px;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        @include media1400 {
+            margin-top: 20px;
+        }
+    }
+    &__action-button {
+        margin-top: 30px;
+        width: 290px;
+        height: 48px;
+        @include media1400 {
+            width: 247px;
+            margin-top: 28px;
+        }
+    }
+    &__vacancies {
+        width: 100%;
+        list-style-type: none;
+        margin-top: 39px;
+        margin-bottom: 0;
+        padding: 0;
+        @include media1400 {
+            margin-top: 110px;
+        }
+    }
+    &__vacancy:nth-child(n+2) {
+        margin-top: 15px;
+    }
+}
+
+.vacancy {
+    &__link {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+        max-width: 750px;
+        text-decoration: none;
+        &:hover * {
+            color: $color-white;
+        }
+        &:hover>.vacancy__content {
+            background-color: $color-navy-blue;
+            background-clip: padding-box;
+        }
+        &:hover>.vacancy__arrow {
+            background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+            @include media1400 {
+                background-color: $color-navy-blue;
+                background-clip: padding-box;
+            }
+        }
+        @include media1400 {
+            height: 81px;
+        }
+    }
+    &__link_hovered {
+        @include media1400 {
+            .vacancy__position,
+            .vacancy__location {
+                color: $color-white;
+            }
+            &>.vacancy__content {
+                background-color: $color-navy-blue;
+                background-clip: padding-box;
+            }
+            &>.vacancy__arrow {
+                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+                @include media1400 {
+                    background-color: $color-navy-blue;
+                    background-clip: padding-box;
+                }
+            }
+        }
+    }
+    &__position {
+        width: 199px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        color: $text-color-initial;
+        @include media1400 {
+            width: 408px;
+        }
+    }
+    &__location {
+        width: 199px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-color-initial-transparent;
+        @include media1400 {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+    }
+    &__content {
+        height: 100%;
+        padding: 19px 0 19px 20px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid $border-color-initial-transparent;
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+        @include media1400 {
+            padding: 26px 0 26px 25px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+    &__arrow {
+        height: 100%;
+        width: 50px;
+        border: 1px solid $border-color-initial-transparent;
+        border-left: none;
+        border-radius: 0 8px 8px 0;
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
+        background-color: $color-grey;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+        @include media1400 {
+            background-color: transparent;
+        }
+    }
+}

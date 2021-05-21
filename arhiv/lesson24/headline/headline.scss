@@ -6,7 +6,7 @@
             position: relative;
         }
         &__content {
-            margin: 0 auto; //margin: 35px auto 0 auto;
+            margin: 35px auto 0 auto;
             @include media1400 {
                 position: absolute;
                 z-index: 1;
