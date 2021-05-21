@@ -1450,7 +1450,7 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .order__title {
-    margin-top: 0;
+    margin-top: 40px;
     text-align: left;
   }
 }

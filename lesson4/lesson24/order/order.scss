@@ -34,7 +34,7 @@
         text-align: center;
         letter-spacing: -0.25px;
         @include media1400 {
-            margin-top: 0;
+            margin-top: 40px; //margin-top: 0;
             text-align: left;
         }
     }
