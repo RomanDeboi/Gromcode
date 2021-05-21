@@ -9,11 +9,13 @@
         padding: 0 228px 0 224px;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
     &__illustration {
         width: 200px;
         @include media1400 {
             width: 269.41px;
+            margin-top: 76px;
         }
     }
     &__content {
@@ -23,6 +25,7 @@
         @include media1400 {
             width: 555px;
             align-items: flex-start;
+            margin-top: 106px;
         }
     }
     &__title {
@@ -34,7 +37,7 @@
         text-align: center;
         letter-spacing: -0.25px;
         @include media1400 {
-            margin-top: 40px; //margin-top: 0;
+            margin-top: 0;
             text-align: left;
         }
     }

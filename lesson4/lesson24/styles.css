@@ -1418,6 +1418,7 @@ hr {
     padding: 0 228px 0 224px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .order__illustration {
@@ -1426,6 +1427,7 @@ hr {
 @media screen and (min-width: 1400px) {
   .order__illustration {
     width: 269.41px;
+    margin-top: 76px;
   }
 }
 .order__content {
@@ -1437,6 +1439,7 @@ hr {
   .order__content {
     width: 555px;
     align-items: flex-start;
+    margin-top: 106px;
   }
 }
 .order__title {
@@ -1450,7 +1453,7 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .order__title {
-    margin-top: 40px;
+    margin-top: 0;
     text-align: left;
   }
 }
