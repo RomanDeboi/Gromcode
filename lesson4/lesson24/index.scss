@@ -36,7 +36,6 @@ html {
 .top-section {
     background-color: $color-coral;
     @include media1400 {
-        height: 710px;
         display: flex;
         flex-direction: column;
     }

@@ -378,8 +378,11 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    display: block;
+    display: flex;
     position: relative;
+    width: 1140px;
+    margin: 84px auto 0;
+    padding-bottom: 77px;
   }
 }
 .headline__content {
@@ -389,8 +392,6 @@ hr {
   .headline__content {
     position: absolute;
     z-index: 1;
-    top: 76px;
-    left: 126px;
     margin: 0;
   }
 }
@@ -467,12 +468,13 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .headline__banner {
-    position: absolute;
+    position: relative;
     width: 796px;
     height: 448px;
-    top: 84px;
-    left: 41.3571429%;
+    top: 0;
+    right: -105px;
     margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -1546,7 +1548,6 @@ html {
 }
 @media screen and (min-width: 1400px) {
   .top-section {
-    height: 710px;
     display: flex;
     flex-direction: column;
   }
