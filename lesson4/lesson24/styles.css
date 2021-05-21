@@ -375,6 +375,7 @@ hr {
 .headline {
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
 }
 @media screen and (min-width: 1400px) {
   .headline {

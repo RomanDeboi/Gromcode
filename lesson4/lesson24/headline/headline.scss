@@ -1,6 +1,7 @@
     .headline {
         display: flex;
         flex-direction: column;
+        margin-top: 35px;
         @include media1400 {
             display: flex;
             position: relative;
