@@ -1415,9 +1415,9 @@ hr {
 @media screen and (min-width: 1400px) {
   .order {
     height: 441px;
-    padding: 0 228px 0 224px;
+    padding: 73px 0 72px 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -1426,8 +1426,8 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .order__illustration {
-    width: 269.41px;
-    margin-top: 76px;
+    width: 269px;
+    margin-right: 121px;
   }
 }
 .order__content {
@@ -1439,7 +1439,6 @@ hr {
   .order__content {
     width: 555px;
     align-items: flex-start;
-    margin-top: 102px;
   }
 }
 .order__title {
@@ -1453,7 +1452,6 @@ hr {
 }
 @media screen and (min-width: 1400px) {
   .order__title {
-    margin-top: 0;
     text-align: left;
   }
 }
