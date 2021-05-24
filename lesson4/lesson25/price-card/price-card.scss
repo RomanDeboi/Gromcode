@@ -1,0 +1,124 @@
+.price-card {
+    width: 380px;
+    height: 770px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 0 40px 0;
+    overflow: hidden;
+    background: $bg-color-price-card;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+    &:nth-child(n+2) {
+        margin-left: 18px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__title-part1 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        text-align: center;
+    }
+    &__title-part2 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    &__price-value {
+        margin-top: 33px;
+        margin-bottom: 0;
+        height: 105px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 105px;
+        text-align: center;
+        &_theme-green {
+            background: $color-theme-green;
+        }
+        &_theme-blue {
+            background: $color-theme-blue;
+        }
+        &_theme-orange {
+            background: $color-theme-orange;
+        }
+    }
+    &__description {
+        margin-top: 40px;
+        width: 327px;
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+    }
+    &__advantages {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__advantage {
+        height: 50px;
+        padding-left: 59px;
+        font-size: 15px;
+        line-height: 50px;
+        &:nth-child(odd) {
+            background-color: $color-odd-list-item;
+        }
+        &_theme-green {
+            background: url(img/verification-checkmark-green.png) no-repeat 22px 18px;
+        }
+        &_theme-blue {
+            background: url(img/verification-checkmark-blue.png) no-repeat 22px 18px;
+        }
+        &_theme-orange {
+            background: url(img/verification-checkmark-orange.png) no-repeat 22px 18px;
+        }
+    }
+    &__order-link {
+        width: 155px;
+        height: 40px;
+        margin-top: 39px;
+        border-radius: 20px;
+        background-color: $color-theme-green;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
+        color: $text-color-initial;
+        text-decoration: none;
+        &_theme-green {
+            background-color: $color-theme-green;
+        }
+        &_theme-blue {
+            background-color: $color-theme-blue;
+        }
+        &_theme-orange {
+            background: $color-theme-orange;
+        }
+    }
+}
+
+.tag-popular {
+    position: absolute;
+    display: inline-block;
+    height: 25px;
+    width: 147px;
+    left: 264px;
+    top: 31px;
+    margin: 0;
+    text-align: center;
+    background: $bg-color-tag-popular;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    transform: rotate(45deg);
+}
