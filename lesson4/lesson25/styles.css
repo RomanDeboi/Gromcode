@@ -33,7 +33,7 @@
   line-height: 24px;
   text-align: center;
 }
-.price-card__price-value {
+.price-card__price {
   margin-top: 33px;
   margin-bottom: 0;
   height: 105px;
@@ -43,13 +43,13 @@
   line-height: 105px;
   text-align: center;
 }
-.price-card__price-value_theme-green {
+.price-card__price_theme-green {
   background: #5BB189;
 }
-.price-card__price-value_theme-blue {
+.price-card__price_theme-blue {
   background: #3A6BA5;
 }
-.price-card__price-value_theme-orange {
+.price-card__price_theme-orange {
   background: #EC632A;
 }
 .price-card__description {
@@ -60,7 +60,7 @@
   line-height: 18px;
   text-align: center;
 }
-.price-card__advantages {
+.price-card__list {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 0;
@@ -85,7 +85,7 @@
 .price-card__advantage_theme-orange {
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png) no-repeat 22px 18px;
 }
-.price-card__order-link {
+.price-card__btn {
   width: 155px;
   height: 40px;
   margin-top: 39px;
@@ -98,17 +98,17 @@
   color: #FFFFFF;
   text-decoration: none;
 }
-.price-card__order-link_theme-green {
+.price-card__btn_theme-green {
   background-color: #5BB189;
 }
-.price-card__order-link_theme-blue {
+.price-card__btn_theme-blue {
   background-color: #3A6BA5;
 }
-.price-card__order-link_theme-orange {
+.price-card__btn_theme-orange {
   background: #EC632A;
 }
 
-.tag-popular {
+.badge {
   position: absolute;
   display: inline-block;
   height: 25px;
@@ -135,10 +135,10 @@ html {
   color: #FFFFFF;
 }
 
-.prise-list {
+.prise-page {
   max-width: 100vw;
   min-height: 100vh;
-  padding: 132px 115px;
+  padding: 0 115px;
   display: flex;
   flex-direction: row;
   justify-content: center;

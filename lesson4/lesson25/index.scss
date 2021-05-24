@@ -12,10 +12,10 @@ html {
     color: $text-color-initial;
 }
 
-.prise-list {
+.prise-page {
     max-width: 100vw;
     min-height: 100vh;
-    padding: 132px 115px;
+    padding: 0 115px;
     display: flex;
     flex-direction: row;
     justify-content: center;

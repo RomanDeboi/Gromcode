@@ -31,7 +31,7 @@
         line-height: 24px;
         text-align: center;
     }
-    &__price-value {
+    &__price {
         margin-top: 33px;
         margin-bottom: 0;
         height: 105px;
@@ -58,7 +58,7 @@
         line-height: 18px;
         text-align: center;
     }
-    &__advantages {
+    &__list {
         width: 100%;
         margin-top: 40px;
         margin-bottom: 0;
@@ -83,7 +83,7 @@
             background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png) no-repeat 22px 18px;
         }
     }
-    &__order-link {
+    &__btn {
         width: 155px;
         height: 40px;
         margin-top: 39px;
@@ -107,7 +107,7 @@
     }
 }
 
-.tag-popular {
+.badge {
     position: absolute;
     display: inline-block;
     height: 25px;
