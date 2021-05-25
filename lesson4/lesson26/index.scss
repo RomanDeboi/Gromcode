@@ -1,0 +1,29 @@
+@import "variables.scss",
+"common.scss",
+"header/header.scss",
+"headline/headline.scss",
+"reviews/reviews.scss",
+"workflow/workflow.scss",
+"features/features.scss";
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    color: $text-color-initial;
+}
+
+.page {
+    width: 640px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+    @include large {
+        width: 1440px;
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png) 0% 0%/cover no-repeat;
+    }
+}
