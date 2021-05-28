@@ -1,0 +1,25 @@
+@mixin small-and-medium {
+    @media screen and (max-width: $breakpoint - 1) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and(min-width: $breakpoint) {
+        @content;
+    }
+}
+
+.upload-btn {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    color: $text-color-btn;
+    text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+    background-color: $text-color-blue;
+    border: none;
+    box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+}
