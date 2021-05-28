@@ -28,7 +28,7 @@
 @media screen and (min-width: 1024px) {
   .page-header__navigation {
     display: block;
-    margin-left: 220px;
+    margin-left: 200px;
   }
 }
 .page-header__menu-list {
@@ -60,7 +60,7 @@
     display: block;
     width: 180px;
     height: 100%;
-    margin-left: 20px;
+    margin-left: auto;
   }
 }
 
@@ -73,8 +73,6 @@
   flex: 0 0 auto;
 }
 .logo__text {
-  width: 100px;
-  height: 30px;
   margin-left: 10px;
   flex: 0 0 auto;
   font-weight: 600;
@@ -88,17 +86,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  margin-top: 80px;
 }
 @media screen and (min-width: 1024px) {
   .headline {
     display: block;
-    padding: 150px 0 160px 160px;
+    margin: 150px 160px 160px 160px;
     position: relative;
   }
 }
 .headline__content {
-  width: 480px;
+  width: 100%;
   flex: 0 0 auto;
 }
 @media screen and (min-width: 1024px) {
@@ -107,22 +105,26 @@
   }
 }
 .headline__title {
-  margin: 0;
   width: 100%;
-  font-weight: 600;
+  padding: 0 80px;
+  margin: 0;
+  padding-right: 10px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 60px;
   letter-spacing: 1px;
 }
 .headline__description {
+  width: 100%;
+  padding: 0 80px;
   margin-top: 20px;
   margin-bottom: 0;
-  width: 100%;
   font-size: 20px;
   line-height: 40px;
 }
 .headline__upload-btn {
   margin-top: 40px;
+  margin-left: 80px;
   width: 300px;
   height: 50px;
 }
@@ -145,8 +147,8 @@
   .headline__illustration {
     margin: 0;
     position: absolute;
-    top: 200px;
-    right: 160px;
+    top: 50px;
+    right: 0;
   }
 }
 .headline__invitation {
@@ -201,7 +203,7 @@
   width: 540px;
   padding: 40px;
   flex: 0 0 auto;
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png) 424px 40px no-repeat, #FFFFFF;
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png) calc(100% - 32px) 40px no-repeat, #FFFFFF;
   filter: drop-shadow(0px 20px 60px rgba(25, 104, 252, 0.1));
 }
 .review__author {
@@ -209,15 +211,12 @@
   align-items: center;
 }
 .review__author-name {
-  font-weight: 600;
   font-size: 18px;
   line-height: 30px;
 }
 .review__author-position {
-  font-weight: 600;
   font-size: 14px;
   line-height: 30px;
-  color: rgba(25, 103, 250, 0.8);
 }
 .review__author-information {
   margin-left: 20px;
@@ -227,6 +226,17 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 30px;
+}
+.review__text_desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .review__text_desktop {
+    display: block;
+  }
+  .review__text_mobile {
+    display: none;
+  }
 }
 
 .workflow {
@@ -350,11 +360,11 @@
 }
 
 .features {
-  padding: 120px 55px 0 60px;
+  margin: 120px 55px 0 60px;
 }
 @media screen and (min-width: 1024px) {
   .features {
-    padding: 120px 155px 0 120px;
+    margin: 120px 155px 0 120px;
   }
 }
 .features__title {
@@ -436,8 +446,6 @@
   background: #F3F7FF;
 }
 .feature__illustration {
-  width: 80px;
-  height: 80px;
   flex: 0 0 auto;
 }
 @media screen and (min-width: 1024px) {
@@ -688,7 +696,7 @@
   line-height: 40px;
   color: #FFFFFF;
 }
-.consultation__link {
+.consultation__button {
   width: 320px;
   height: 50px;
   margin-top: 40px;
@@ -910,21 +918,36 @@ html {
   margin: 0 auto 90px auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
 }
 @media screen and (min-width: 1024px) {
   .page {
     width: 1440px;
     margin: 0 auto;
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png) 0% 0%/cover no-repeat;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png) 0% 0% no-repeat;
   }
 }
 .page__header {
-  margin: 40px 0 0 80px;
+  padding: 40px 0 0 80px;
 }
 @media screen and (min-width: 1024px) {
   .page__header {
+    padding: 0;
     margin: 30px 160px 0;
+  }
+}
+.page::before {
+  content: "";
+  width: 100%;
+  height: 3390px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+}
+@media screen and (min-width: 1024px) {
+  .page::before {
+    display: none;
   }
 }
 

@@ -26,16 +26,29 @@ html {
     margin: 0 auto 90px auto;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
     @include large {
         width: 1440px;
         margin: 0 auto;
-        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png) 0% 0%/cover no-repeat;
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png) 0% 0% no-repeat;
     }
     &__header {
-        margin: 40px 0 0 80px;
+        padding: 40px 0 0 80px;
         @include large {
+            padding: 0;
             margin: 30px 160px 0;
+        }
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 3390px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+        @include large {
+            display: none;
         }
     }
 }

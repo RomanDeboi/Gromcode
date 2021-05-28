@@ -1,7 +1,7 @@
 .features {
-    padding: 120px 55px 0 60px;
+    margin: 120px 55px 0 60px;
     @include large {
-        padding: 120px 155px 0 120px;
+        margin: 120px 155px 0 120px;
     }
     &__title {
         margin: 0;
@@ -69,8 +69,8 @@
         background: $color-grey;
     }
     &__illustration {
-        width: 80px;
-        height: 80px;
+        // width: 80px;
+        // height: 80px;
         flex: 0 0 auto;
         @include large {
             width: 120px;

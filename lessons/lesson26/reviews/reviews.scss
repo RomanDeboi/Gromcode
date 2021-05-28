@@ -21,22 +21,19 @@
     width: 540px;
     padding: 40px;
     flex: 0 0 auto;
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png) 424px 40px no-repeat, #FFFFFF;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png) calc(100% - 32px) 40px no-repeat, #FFFFFF;
     filter: drop-shadow(0px 20px 60px rgba(25, 104, 252, 0.1));
     &__author {
         display: flex;
         align-items: center;
     }
     &__author-name {
-        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
     }
     &__author-position {
-        font-weight: 600;
         font-size: 14px;
         line-height: 30px;
-        color: $text-color-blue-transparent;
     }
     &__author-information {
         margin-left: 20px;
@@ -46,5 +43,16 @@
         margin-bottom: 0;
         font-size: 16px;
         line-height: 30px;
+        &_desktop {
+            display: none;
+        }
+        @include large {
+            &_desktop {
+                display: block;
+            }
+            &_mobile {
+                display: none;
+            }
+        }
     }
 }

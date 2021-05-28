@@ -9,7 +9,7 @@
         display: none;
         @include large {
             display: block;
-            margin-left: 220px;
+            margin-left: 200px;
         }
     }
     &__menu-list {
@@ -39,7 +39,7 @@
             display: block;
             width: 180px;
             height: 100%;
-            margin-left: 20px;
+            margin-left: auto;
         }
     }
 }
@@ -52,8 +52,6 @@
         flex: 0 0 auto;
     }
     &__text {
-        width: 100px;
-        height: 30px;
         margin-left: 10px;
         flex: 0 0 auto;
         font-weight: 600;
