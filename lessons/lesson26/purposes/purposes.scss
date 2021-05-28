@@ -8,9 +8,6 @@
         font-size: 30px;
         line-height: 60px;
         text-transform: uppercase;
-        @include large {
-            margin: 0 0 0 40px;
-        }
     }
     &__decoration-line {
         width: 80px;
@@ -23,7 +20,7 @@
     &__list {
         margin-top: 38px;
         @include large {
-            margin: 38px 0 0 40px;
+            margin: 38px 0 0 0;
             display: flex;
             flex-wrap: wrap;
         }

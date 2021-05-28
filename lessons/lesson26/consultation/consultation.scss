@@ -13,6 +13,7 @@
         text-transform: uppercase;
         color: $text-color-btn;
         @include large {
+            display: table;
             margin: 0 0 0 40px;
         }
     }

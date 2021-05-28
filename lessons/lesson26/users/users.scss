@@ -18,7 +18,6 @@
                 &_mobile {
                     display: none;
                 }
-                margin: 0 0 0 40px;
             }
         }
         &__decoration-line {
@@ -34,7 +33,7 @@
             display: flex;
             flex-wrap: wrap;
             @include large {
-                margin: 38px 0 0 40px;
+                margin: 38px 0 0 0;
             }
         }
         &__list-item {

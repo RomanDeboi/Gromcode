@@ -28,7 +28,7 @@
 @media screen and (min-width: 1024px) {
   .page-header__navigation {
     display: block;
-    margin-left: 200px;
+    margin-left: auto;
   }
 }
 .page-header__menu-list {
@@ -60,7 +60,7 @@
     display: block;
     width: 180px;
     height: 100%;
-    margin-left: auto;
+    margin-left: 20px;
   }
 }
 
@@ -75,7 +75,6 @@
 .logo__text {
   margin-left: 10px;
   flex: 0 0 auto;
-  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -96,7 +95,7 @@
   }
 }
 .headline__content {
-  width: 100%;
+  width: 480px;
   flex: 0 0 auto;
 }
 @media screen and (min-width: 1024px) {
@@ -106,7 +105,6 @@
 }
 .headline__title {
   width: 100%;
-  padding: 0 80px;
   margin: 0;
   padding-right: 10px;
   font-weight: 700;
@@ -116,7 +114,6 @@
 }
 .headline__description {
   width: 100%;
-  padding: 0 80px;
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 20px;
@@ -124,7 +121,6 @@
 }
 .headline__upload-btn {
   margin-top: 40px;
-  margin-left: 80px;
   width: 300px;
   height: 50px;
 }
@@ -185,6 +181,7 @@
   .reviews {
     flex-direction: row;
     justify-content: center;
+    margin: 0 160px;
   }
 }
 .reviews__element {
@@ -226,17 +223,6 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 30px;
-}
-.review__text_desktop {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .review__text_desktop {
-    display: block;
-  }
-  .review__text_mobile {
-    display: none;
-  }
 }
 
 .workflow {
@@ -373,11 +359,6 @@
   line-height: 60px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1024px) {
-  .features__title {
-    margin: 0 0 0 40px;
-  }
-}
 .features__decoration-line {
   width: 80px;
   height: 2px;
@@ -391,7 +372,7 @@
 }
 @media screen and (min-width: 1024px) {
   .features__list {
-    margin: 48px 0 0 40px;
+    margin: 48px 0 0 0;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -500,9 +481,6 @@
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .users__title {
-    margin: 0 0 0 40px;
-  }
   .users__title_desktop {
     display: block;
   }
@@ -525,7 +503,7 @@
 }
 @media screen and (min-width: 1024px) {
   .users__list {
-    margin: 38px 0 0 40px;
+    margin: 38px 0 0 0;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -591,11 +569,6 @@
   line-height: 60px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1024px) {
-  .purposes__title {
-    margin: 0 0 0 40px;
-  }
-}
 .purposes__decoration-line {
   width: 80px;
   height: 2px;
@@ -609,7 +582,7 @@
 }
 @media screen and (min-width: 1024px) {
   .purposes__list {
-    margin: 38px 0 0 40px;
+    margin: 38px 0 0 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -669,6 +642,7 @@
 }
 @media screen and (min-width: 1024px) {
   .consultation__title {
+    display: table;
     margin: 0 0 0 40px;
   }
 }
@@ -800,7 +774,7 @@
   margin: 0;
 }
 .story-card__description-paragraph:nth-last-child(n+2) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .story-card__link {
   color: #000000;

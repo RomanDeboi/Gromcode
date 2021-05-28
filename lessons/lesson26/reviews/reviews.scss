@@ -5,6 +5,7 @@
     @include large {
         flex-direction: row;
         justify-content: center;
+        margin: 0 160px;
     }
     &__element {
         margin-top: 50px;
@@ -43,16 +44,5 @@
         margin-bottom: 0;
         font-size: 16px;
         line-height: 30px;
-        &_desktop {
-            display: none;
-        }
-        @include large {
-            &_desktop {
-                display: block;
-            }
-            &_mobile {
-                display: none;
-            }
-        }
     }
 }
