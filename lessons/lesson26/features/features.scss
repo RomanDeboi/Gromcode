@@ -70,8 +70,6 @@
         background: $color-grey;
     }
     &__illustration {
-        // width: 80px;
-        // height: 80px;
         flex: 0 0 auto;
         @include large {
             width: 120px;
