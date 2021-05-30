@@ -12,9 +12,6 @@
   box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
 }
 
-.page-header {
-  flex: 0 0 auto;
-}
 @media screen and (min-width: 1024px) {
   .page-header {
     width: 1120px;
@@ -60,12 +57,11 @@
     display: block;
     width: 180px;
     height: 100%;
-    margin-left: 20px;
   }
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
 }
@@ -351,6 +347,9 @@
 @media screen and (min-width: 1024px) {
   .features {
     margin: 120px 155px 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .features__title {
@@ -363,6 +362,7 @@
   width: 80px;
   height: 2px;
   margin: 10px 0 0 0;
+  flex: 0 0 auto;
   box-sizing: border-box;
   border: 1px solid #1968FC;
   box-shadow: 0px 2px 0px #D1E1FE;
@@ -464,11 +464,11 @@
 }
 
 .users {
-  padding: 120px 60px 0 60px;
+  margin: 120px 60px 0 60px;
 }
 @media screen and (min-width: 1024px) {
   .users {
-    padding: 120px 155px 0 120px;
+    margin: 120px 155px 0 120px;
   }
 }
 .users__title {
@@ -556,11 +556,11 @@
 }
 
 .purposes {
-  padding: 120px 60px 60px 60px;
+  margin: 120px 60px 60px 60px;
 }
 @media screen and (min-width: 1024px) {
   .purposes {
-    padding: 120px;
+    margin: 120px;
   }
 }
 .purposes__title {
@@ -791,7 +791,9 @@
 }
 @media screen and (min-width: 1024px) {
   .page-footer {
-    padding: 40px 160px;
+    width: calc(100% - 320px);
+    padding: 40px 0;
+    margin: 0 160px;
   }
 }
 .page-footer__navigation {
@@ -854,7 +856,7 @@
 @media screen and (min-width: 1024px) {
   .page-footer__illustration {
     height: 100px;
-    right: 160px;
+    right: 0px;
   }
 }
 
