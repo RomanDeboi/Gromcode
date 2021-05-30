@@ -234,6 +234,7 @@
 .workflow__title {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -357,6 +358,7 @@
 .features__title {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -476,6 +478,7 @@
 .users__title {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -568,6 +571,7 @@
 .purposes__title {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -711,6 +715,7 @@
 .stories__title {
   margin: 0;
   font-size: 30px;
+  font-weight: 400;
   line-height: 60px;
   text-transform: uppercase;
 }
