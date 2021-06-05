@@ -1,0 +1,66 @@
+.consultation {
+    padding: 60px;
+    background: #1968FC;
+    @include large {
+        padding: 80px 160px 80px 120px;
+        position: relative;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: $text-color-btn;
+        @include large {
+            display: table;
+            margin: 0;
+        }
+    }
+    &__decoration-line {
+        width: 80px;
+        height: 2px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        border: 1px solid $text-color-btn;
+        box-shadow: 0px 2px 0px #6A9EFF;
+    }
+    &__main-content {
+        margin-top: 38px;
+        @include large {
+            margin: 48px 0 0 0;
+            width: 640px;
+        }
+    }
+    &__description {
+        margin: 0;
+        padding-right: 20px;
+        font-size: 20px;
+        line-height: 40px;
+        color: $text-color-btn;
+    }
+    &__button {
+        width: 320px;
+        height: 50px;
+        margin-top: 40px;
+        display: block;
+        background: $text-color-btn;
+        box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $text-color-blue;
+    }
+    &__illustration {
+        display: none;
+        @include large {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 1px;
+        }
+    }
+}

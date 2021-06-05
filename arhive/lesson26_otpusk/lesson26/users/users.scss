@@ -1,0 +1,86 @@
+    .users {
+        margin: 120px 60px 0 60px;
+        @include large {
+            margin: 120px 155px 0 120px;
+        }
+        &__title {
+            &_desktop {
+                display: none;
+            }
+            margin: 0;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 60px;
+            text-transform: uppercase;
+            @include large {
+                &_desktop {
+                    display: block;
+                }
+                &_mobile {
+                    display: none;
+                }
+            }
+        }
+        &__decoration-line {
+            width: 80px;
+            height: 2px;
+            margin: 10px 0 0 0;
+            box-sizing: border-box;
+            border: 1px solid $text-color-blue;
+            box-shadow: 0px 2px 0px #D1E1FE;
+        }
+        &__list {
+            margin-top: 28px;
+            display: flex;
+            flex-wrap: wrap;
+            @include large {
+                margin: 38px 0 0 0;
+            }
+        }
+        &__list-item {
+            @include small-and-medium {
+                &:nth-child(even) {
+                    margin-left: 20px;
+                }
+                &:nth-child(n+3) {
+                    margin-top: 20px;
+                }
+            }
+            @include large {
+                margin-left: 20px;
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+                &:nth-child(n+4) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+    .user {
+        width: 250px;
+        height: 190px;
+        padding: 20px;
+        flex: 0 0 auto;
+        background: $text-color-btn;
+        box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+        @include large {
+            width: 360px;
+            height: 160px;
+        }
+        &__title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: $color-blue-light;
+        }
+        &__description {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }

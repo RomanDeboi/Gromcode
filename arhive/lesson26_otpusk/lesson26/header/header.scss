@@ -1,0 +1,61 @@
+.page-header {
+    @include large {
+        width: 1120px;
+        height: 50px;
+        display: flex;
+    }
+    &__navigation {
+        display: none;
+        @include large {
+            display: block;
+            margin-left: auto;
+        }
+    }
+    &__menu-list {
+        margin: 0;
+        padding: 0;
+        flex: 0 0 auto;
+        display: flex;
+        list-style-type: none;
+    }
+    &__menu-link {
+        width: 120px;
+        flex: 0 0 auto;
+        height: 100%;
+        line-height: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: $text-color-navigation;
+        &:last-child {
+            width: 180px;
+        }
+    }
+    &__upload-btn {
+        display: none;
+        @include large {
+            flex: 0 0 auto;
+            display: block;
+            width: 180px;
+            height: 100%;
+            margin-left: 20px;
+        }
+    }
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__img {
+        flex: 0 0 auto;
+    }
+    &__text {
+        margin-left: 10px;
+        flex: 0 0 auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #1968FC;
+    }
+}

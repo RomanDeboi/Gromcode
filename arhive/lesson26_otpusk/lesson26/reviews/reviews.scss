@@ -1,0 +1,49 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include large {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 160px;
+    }
+    &__element {
+        margin-top: 50px;
+        @include large {
+            margin-top: 0;
+            &:last-child {
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+.review {
+    width: 540px;
+    height: 280px;
+    padding: 40px;
+    flex: 0 0 auto;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png) calc(100% - 32px) 40px no-repeat, #FFFFFF;
+    filter: drop-shadow(0px 20px 60px rgba(25, 104, 252, 0.1));
+    &__author {
+        display: flex;
+        align-items: center;
+    }
+    &__author-name {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &__author-position {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    &__author-information {
+        margin-left: 20px;
+    }
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

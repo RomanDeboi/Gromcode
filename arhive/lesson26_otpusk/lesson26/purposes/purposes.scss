@@ -1,0 +1,63 @@
+.purposes {
+    margin: 120px 60px 60px 60px;
+    @include large {
+        margin: 120px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    &__decoration-line {
+        width: 80px;
+        height: 2px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        border: 1px solid $text-color-blue;
+        box-shadow: 0px 2px 0px #D1E1FE;
+    }
+    &__list {
+        margin-top: 38px;
+        @include large {
+            margin: 38px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__list-item {
+        @include small-and-medium {
+            &:nth-child(n+2) {
+                margin-top: 40px;
+            }
+        }
+        @include large {
+            &:nth-child(even) {
+                margin-left: 40px;
+            }
+            &:nth-child(n+3) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.purpose {
+    width: 520px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: $text-color-btn;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    @include large {
+        width: 540px;
+    }
+    &__description {
+        margin: 0 0 0 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 40px;
+        color: $text-color-black;
+    }
+}
