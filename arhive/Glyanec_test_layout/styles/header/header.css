@@ -1,0 +1,137 @@
+.header {
+    width: 100%;
+}
+
+
+/* Header-top */
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    padding: 0 51px;
+}
+
+.header-top>* {
+    flex: 0 0 auto;
+}
+
+.header-top__contact-phone-number {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.contact-phone-number {
+    cursor: pointer;
+}
+
+.contact-phone-number__number {
+    align-self: flex-start;
+    margin-left: 5px;
+    line-height: 22.5px;
+    vertical-align: bottom;
+}
+
+.contact-phone-number__arrow {
+    margin-left: 10px;
+}
+
+.header-top__main-navigation {
+    margin-left: auto;
+}
+
+.main-navigation__links-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-navigation__links-list-item {
+    height: 23px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.main-navigation__links-list-item:nth-child(n + 2) {
+    margin-left: 15px;
+}
+
+.main-navigation__links-list-item:hover {
+    border-bottom: 3px solid #44c697;
+}
+
+.main-navigation__link {
+    line-height: 23px;
+    text-decoration: none;
+    color: #1e2e36;
+}
+
+
+/* Header-bottom */
+
+.header-bottom {
+    display: flex;
+    height: 106px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 51px;
+    border-top: 1px solid rgba(30, 46, 54, 0.6);
+}
+
+.additional-navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.additional-navigation__list-item {
+    height: 23px;
+    line-height: 23px;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+.additional-navigation__list-item:nth-child(n + 2) {
+    margin-left: 19px;
+}
+
+.additional-navigation__list-item-arrow {
+    width: 11.25px;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+
+.header-bottom__site-logo {
+    justify-content: center;
+}
+
+.header-actions__shopping-cart {
+    height: 30px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #1e2e36;
+}
+
+.header-actions__shopping-cart-title {
+    margin-left: 5px;
+}
+
+.header-actions__shopping-cart>* {
+    vertical-align: middle;
+}
+
+.header-actions__call-back {
+    margin-left: 30px;
+}
