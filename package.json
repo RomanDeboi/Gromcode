@@ -16,5 +16,9 @@
     "url": "https://github.com/RomanDeboi/Gromcode/issues"
   },
   "homepage": "https://github.com/RomanDeboi/Gromcode#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8"
+  }
 }
