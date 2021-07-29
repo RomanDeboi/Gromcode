@@ -1,0 +1,43 @@
+@import 'variables.scss', 'common.scss', 'heder.scss', 'footer.scss',
+  'headline.scss', 'about.scss', 'customers.scss', 'features.scss', 'tips.scss',
+  'inbox.scss', 'comunication.scss', 'audience.scss', 'feedback.scss',
+  'hiring.scss', 'order.scss';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  color: $text-color-initial;
+}
+
+.page {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  min-width: 320px;
+  @include media1400 {
+    max-width: 1400px;
+  }
+}
+
+.top-section {
+  background-color: $color-coral;
+  @include media1400 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    @include media1400 {
+      margin: 39px auto 0 auto;
+      flex-shrink: 0;
+    }
+  }
+  &__headline {
+    @include media1400 {
+      flex-shrink: 0;
+      flex-grow: 1;
+    }
+  }
+}
