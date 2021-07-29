@@ -1,6 +1,6 @@
 # Template with prices on product
 
-### [Site link](https://romandeboi.github.io/Gromcode/HTML_CSS/lesson24/index.html)
+### [Site link](https://romandeboi.github.io/Gromcode/HTML_CSS/lesson25/index.html)
 
 Layout supports only desktop version
 
