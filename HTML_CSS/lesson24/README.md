@@ -13,4 +13,4 @@ Layout supports mobile (up-to-1399) and desktop (from-1400) versions
 - [BEM methodology](https://en.bem.info/methodology/)
 
 ### Author
-Deboy Roman
+Roman Deboy
